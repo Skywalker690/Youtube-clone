@@ -9,27 +9,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;400;700;900&display=swap" rel="stylesheet">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/25d7bc2ff1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css" />
-
-
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/Assets/icon/yt.png" type="image/x-icon">
 </head>
 <body>
+
+  
   <div class="HEADER">
-    <img class="menu" src="https://cdn4.iconfinder.com/data/icons/user-interface-33/80/Menu-512.png" alt="sidemenu" onclick="toggleSidebar()" aria-label="Toggle sidebar">
-    <h1 class="headd">MyTube</h1>
-    <div class="search-container">
+    <button class="hamburger-btn focus:outline-none ham">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </button>
+    <div class="bg-red-600 w-12 h-8 flex items-center justify-center youtube-icon"></div>
+    <span class="headd">MyTube</span>
+    <span class="text-gray-400 text-lg ml-2">IN</span>
+    <div class="search-container " style="margin-left: 100px;">
       <input class="searchbar" type="search" name="search" placeholder="Search" aria-label="Search videos">
       <button class="search-button" aria-label="Search">
         <i class="fas fa-search"></i>
       </button>
     </div>
     <div class="header-icons">
-      <img class="upload" src="https://assets.stickpng.com/images/586ac16ab6fc1117b60b2762.png" alt="upload video" aria-label="Upload video">
       <img class="bell" src="https://cdn.pixabay.com/photo/2020/09/27/10/25/youtube-5606316_1280.png" alt="notifications" aria-label="Notifications">
       <img class="account" src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" alt="account" aria-label="User account">
     </div>
@@ -83,9 +87,7 @@
   </div>
 
   <div class="CONTENT">
-
     <div class="videos">
-
       <!--1-->
       <div class="vid">
         <img class="thumb" src="https://i.ytimg.com/vi/FatkHct9mIw/hq720.jpg" alt="thumbnail">
@@ -98,7 +100,6 @@
           </div>
         </div>
       </div>
-
       <!--2-->
       <div class="vid">
         <img class="thumb" src="Assets/thumbnail/thumbnail4.jpg" alt="thumbnail">
@@ -135,7 +136,6 @@
           </div>
         </div>
       </div>
-
       <!--5-->
       <div class="vid">
         <img class="thumb" src="Assets/thumbnail/thumbnail3.jpg" alt="thumbnail">
@@ -148,9 +148,8 @@
           </div>
         </div>
       </div>
-
       <!--6-->
-        <div class="vid">
+      <div class="vid">
         <img class="thumb" src="Assets/thumbnail/thumbnail5.jpg" alt="thumbnail">
         <div class="videets">
           <img class="icon" src="Assets/icon/icon2.jpg" alt="channel icon">
@@ -161,9 +160,8 @@
           </div>
         </div>
       </div>
-
       <!--7-->
-        <div class="vid">
+      <div class="vid">
         <img class="thumb" src="Assets/thumbnail/thumbnail6.jpg" alt="thumbnail">
         <div class="videets">
           <img class="icon" src="Assets/icon/icon3.jpg" alt="channel icon">
@@ -174,9 +172,8 @@
           </div>
         </div>
       </div>
-
       <!--8-->
-        <div class="vid">
+      <div class="vid">
         <img class="thumb" src="Assets/thumbnail/thumbnail7.jpg" alt="thumbnail">
         <div class="videets">
           <img class="icon" src="Assets/icon/icon6.jpg" alt="channel icon">
@@ -187,8 +184,7 @@
           </div>
         </div>
       </div>
-
-            <div class="vid">
+      <div class="vid">
         <img class="thumb" src="Assets/thumbnail/thumbnail4.jpg" alt="thumbnail">
         <div class="videets">
           <img class="icon" src="Assets/icon/icon5.jpg" alt="channel icon">
@@ -199,8 +195,7 @@
           </div>
         </div>
       </div>
-
-            <div class="vid">
+      <div class="vid">
         <img class="thumb" src="https://i.ytimg.com/vi/1INrF0S90I0/hq720.jpg" alt="thumbnail">
         <div class="videets">
           <img class="icon" src="Assets/icon/icon1.jpg" alt="channel icon">
@@ -211,8 +206,7 @@
           </div>
         </div>
       </div>
-
-            <div class="vid">
+      <div class="vid">
         <img class="thumb" src="https://i.ytimg.com/vi/FatkHct9mIw/hq720.jpg" alt="thumbnail">
         <div class="videets">
           <img class="icon" src="https://yt3.ggpht.com/ytc/AMLnZu8u-ZMGUJiY1c3N5tcRd7dMwaS-tJfz6Pts1FB0Kw=s68-c-k-c0x00ffffff-no-rj" alt="channel icon">
@@ -223,8 +217,7 @@
           </div>
         </div>
       </div>
-
-            <div class="vid">
+      <div class="vid">
         <img class="thumb" src="https://i.ytimg.com/vi/QBJ9Zg_7XR8/hq720.jpg" alt="thumbnail">
         <div class="videets">
           <img class="icon" src="https://yt3.ggpht.com/ytc/AMLnZu8UTbSHI8XokGCfJ9bcQG4tP0gpYNdelbi91f2Ccw=s68-c-k-c0x00ffffff-no-rj" alt="channel icon">
@@ -235,22 +228,17 @@
           </div>
         </div>
       </div>
-
-
-
-      
+    </div>
+  </div>
 
   <script>
-    function toggleSidebar() {
-      const sidebar = document.querySelector('.SIDEBAR');
-      const content = document.querySelector('.CONTENT');
-      sidebar.classList.toggle('hidden');
-      content.classList.toggle('expanded');
-      
-      if (window.innerWidth <= 768) {
-        sidebar.classList.toggle('active');
-      }
-    }
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const sidebar = document.querySelector('.SIDEBAR');
+
+    hamburgerBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('inactive');
+      hamburgerBtn.classList.toggle('active');
+    });
   </script>
 </body>
 </html>
